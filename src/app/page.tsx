@@ -1,101 +1,138 @@
+import Hero from "./components/Hero";
+import Wrapper from "./components/wrapper/Wrapper";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* hero section */}
+      <Hero />
+       <Wrapper>
+        {/* MAIN */}
+        <section className="bg-white overflow-x-hidden">
+          <div className="overflow-x-hidden">
+            <h2 className=" text-sm font-semibold  pt-20 pb-3 sm:text-lg md:text-xl md:pt-24 md:pb-4">NEW ARRIVALS</h2>
+            <div className="flex items-center  justify-evenly mt-10">
+              <div className="flex flex-col  items-center">
+                <Image
+                  src="/hoodies.png"
+                  alt="hoodies"
+                  width={500}
+                  height={500}
+                  className="w-10/12 sm:w-11/12 md:w-full object-cover hover:scale-105 duration-300 mb-1"
+                />
+                <h2 className="text-xs font-normal sm:text-sm sm:font-medium md:text-base md:font-semibold">Hoodies & shirts</h2>
+                <a
+                  href="#Hoodies"
+                  className="text-xs font-light sm:text-sm sm:font-normal md:text-base md:font-medium text-gray-600 hover:scale-105 duration-300"
+                >
+                  Explore {"->"}
+                </a>
+              </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/coats.png"
+                  alt="coats"
+                  width={500}
+                  height={500}
+                  className="w-10/12 sm:w-11/12 md:w-full  object-cover hover:scale-105 duration-300 mb-2 "
+                />
+                <h2 className="text-xs font-normal sm:text-sm sm:font-medium md:text-base md:font-semibold">Coats & Parkas</h2>
+                <a
+                  href="#Coats"
+                  className="text-xs font-light sm:text-sm sm:font-normal md:text-base md:font-medium text-gray-600 hover:scale-105 duration-300"
+                >
+                  Explore {"->"}
+                </a>
+              </div>
+
+              <div className="flex flex-col  items-center">
+                <Image
+                  src="/shirts.png"
+                  alt="shirts"
+                  width={500}
+                  height={500}
+                  className="w-10/12 sm:w-11/12 md:w-full  object-cover hover:scale-105 duration-300 mb-2 "
+                />
+                <h2 className= "text-xs font-normal sm:text-sm sm:font-medium md:text-base md:font-semibold">T-Shirts & Tees</h2>
+                <a
+                  href="#T-Shirt"
+                  className="text-xs font-light sm:text-sm sm:font-normal md:text-base md:font-medium text-gray-600 hover:scale-105 duration-300"
+                >
+                  Explore {"->"}
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* main section 2 */}
+
+        <section>
+          <div className="flex items-center justify-evenly  sm:space-x-10 my-12 bg-amber-300 rounded-3xl">
+            <div>
+              <Image
+                src="/IMG.png"
+                alt="IMG"
+                width={500}
+                height={500}
+                className="w-10/12 sm:w-11/12 md:w-full object-cover"
+              />
+            </div>
+            <div className="">
+              <h2 className="text-lg font-medium sm:text-xl sm:font-semibold  md:text-3xl md:font-bold  inline-block -rotate-1 mt-2  bg-white pl-2 pr-2 lg:text-6xl lg:text-extrabold lg:my-4 ">
+                PAYDAY
+              </h2>
+              <h2 className="text-lg font-medium sm:text-xl sm:font-semibold  md:text-3xl md:font-bold mb-2 lg:text-6xl lg:text-extrabold lg:mb-3">SALE NOW</h2>
+              <p className="text-sm font-medium  sm:font-semibold  md:text-base md:font-semibold lg:text-lg lg:font-semibold">
+                Spend minimal $100 get 30% off
+              </p>
+              <p className="text-sm font-normal sm:font-semibold md:text-base md:font-semibold md:mb-4 lg:text-lg lg:font-semibold">
+                Voucher code for your next purchase
+              </p>
+              <p className=" text-sm font-medium sm:font-semibold md:text-base md:font-semibold md:mb-2 lg:text-lg lg:font-semibold">
+                Terms & conditions apply
+              </p>
+              <button className="lg:mx-10 bg-black lg:px-4 lg:py-2 rounded-lg text-white lg:text-lg lg:font-semibold hover:bg-white  hover:text-black hover:scale-105 duration-500 text-xs my-2 px-2 py-1 font-normal ml-6 sm:text-sm sm:py-2 md:text-base md:font-medium lg::text-lg">
+                Shop Now
+              </button>
+            </div>
+          </div>
+
+          {/* images */}
+          <div>
+          <h2 className="text-lg font-semibold md:text-2xl md:font-extrabold">Young&apos;s Favourite</h2>
+          </div>
+
+          <div className="flex gap-3 my-5 ml-5  items-center justify-center sm:gap-10 sm:my-10 sm:ml-16">
+           <div className=" w-11/12 sm:w-11/12">
+              <Image
+                src="/inst.png"
+                alt="IMG"
+                width={500}
+                height={500}
+                className="object-cover  size-10/12 hover:scale-105 mb-4 duration-300"
+              />
+              <h2 className="text-xs font-normal sm:text-sm sm:font-medium md:text-lg md:font-medium">Trending on instagram</h2>
+              <a href="#" className="text-xs  sm:text-sm text-gray-500 hover:scale-105 duration-300">Explore {"->"}</a>
+            </div> 
+            <div className=" w-11/12 sm:w-11/12">
+              <Image
+                src="/inst2.png"
+                alt="IMG"
+                width={500}
+                height={500}
+                className="object-cover  size-10/12 hover:scale-105 mb-4 duration-300 "
+              />
+               <h2 className="text-xs font-normal sm:text-sm sm:font-medium md:text-lg md:font-medium">All under $40</h2>
+               <a href="#" className="text-xs sm:text-sm text-gray-500 hover:scale-105 duration-300">Explore {"->"}</a>
+            </div>
+
+
+          </div>
+        </section>
+      </Wrapper> 
+    </>
   );
 }
