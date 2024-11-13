@@ -77,10 +77,10 @@ export default function Navbar() {
             
             {/* Added margin to create space between buttons */}
             <button className="bg-black text-white md:px-3 md:py-2 rounded-lg md:text-sm hover:text-white hover:bg-[#E6C744] hover:scale-105 duration-500 sm:mt-7 mt-3 mr-1 text-sm px-2 py-1 font-medium mb-2">
-              Sing Up
+              Sign Up
             </button>
             <button className="bg-black text-white md:px-3 md:py-2 rounded-lg md:text-md hover:text-white hover:bg-[#E6C744] hover:scale-105 duration-500 px-2 py-1 text-sm font-medium ">
-              Sing In
+              Sign In
             </button>
           
           </ul>
